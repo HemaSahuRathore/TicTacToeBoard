@@ -14,7 +14,7 @@ namespace TicTacToeBoardGame
             char[] board = new char[10];
             
             //loop to initalize space
-            for(int i = 1; i<= 10; i++)
+            for(int i = 1; i < 10; i++)
             {
                 board[i] = ' ';
             }
@@ -29,13 +29,17 @@ namespace TicTacToeBoardGame
             Console.WriteLine("Enter either 'X' or 'O'");
             char input = Convert.ToChar(Console.ReadLine());
 
-            if(input == 'X')
+            if(input == X)
+            {
+                Console.WriteLine("{0} taken by user", input);
+            }
+            else if(input == 0)
             {
                 Console.WriteLine("{0} taken by user", input);
             }
             else
             {
-                Console.WriteLine("taken by computer", O);
+                Console.WriteLine("Enter Valid Input");
             }
             
         }
