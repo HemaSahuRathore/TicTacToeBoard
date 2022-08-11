@@ -19,5 +19,24 @@ namespace TicTacToeBoardGame
                 board[i] = ' ';
             }
         }
+
+        public void Uc2()
+        {
+            char X;
+            char O;
+
+            Console.WriteLine("Enter either 'X' or 'O'");
+            char input = Convert.ToChar(Console.ReadLine());
+
+            if(input == 'X')
+            {
+                Console.WriteLine("{0} taken by user", input);
+            }
+            else
+            {
+                Console.WriteLine("taken by computer");
+            }
+            
+        }
     }
 }
