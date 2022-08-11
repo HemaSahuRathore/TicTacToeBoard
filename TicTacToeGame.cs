@@ -20,10 +20,11 @@ namespace TicTacToeBoardGame
             }
         }
 
+        //method for UC2
         public void Uc2()
         {
-            char X;
-            char O;
+            char X = 'X';
+            char O = 'O';
 
             Console.WriteLine("Enter either 'X' or 'O'");
             char input = Convert.ToChar(Console.ReadLine());
@@ -34,7 +35,7 @@ namespace TicTacToeBoardGame
             }
             else
             {
-                Console.WriteLine("taken by computer");
+                Console.WriteLine("taken by computer", O);
             }
             
         }
